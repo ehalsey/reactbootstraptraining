@@ -67,13 +67,6 @@
             background-color: lightseagreen;
         }
 
-        .agingCol {
-            width: 50px;
-            text-align: center;
-            font-size: 12px;
-            color: white;
-        }
-
         .aging01Col {
             background-color: #000;
         }
@@ -101,23 +94,47 @@
         .formCol {
             background-color: lightpink;
         }
+
+        .agingcontainer {
+            white-space: nowrap;
+            /*Prevents Wrapping*/
+
+            /* width: 300px;
+            height: 120px; */
+            overflow-x: scroll;
+            overflow-y: hidden;
+            text-align: right;
+        }
+
+        .agingCol {
+            width: 40px;
+            text-align: center;
+            font-size: 12px;
+            color: white;
+            display: inline-block;
+            /*Display inline and maintain block characteristics.*/
+            vertical-align: top;
+            /*Makes sure all the divs are correctly aligned.*/
+            white-space: normal;
+            /*Prevents child elements from inheriting nowrap.*/
+      
+        }
+
     </style>
 </head>
 
 <body>
     <div class="container">
         <div class="row headerRow">
-            <div class="col titleCol">
+            <div class="col align-self-start titleCol">
                 Bamert Seed Company
             </div>
-            <div class="col-3 text-right">
-                <div class="row text-right">
-                    <div class="col agingCol aging01Col">20</div>
-                    <div class="col agingCol aging02Col">30</div>
-                    <div class="col agingCol aging03Col">40</div>
-                    <div class="col agingCol aging04Col">50</div>
-                    <div class="col agingCol aging05Col">6</div>
-                </div>
+            <div class="col-4 agingcontainer align-self-end">
+                <div class="agingCol aging01Col">20</div>
+                <div class="agingCol aging02Col">30</div>
+                <div class="agingCol aging03Col">40</div>
+                <div class="agingCol aging04Col">50</div>
+                <div class="agingCol aging05Col">6</div>
             </div>
         </div>
         <div class="row" style="min-height: 600px;">
