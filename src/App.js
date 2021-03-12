@@ -1,7 +1,8 @@
 import React from 'react';
 
 function App() {
-  const pdf = <embed type='application/pdf' width="100%" height="99.5%" src="invoice.pdf" />;
+  const pdf = <embed type='application/pdf' width="100%" height="99.5%" src="./invoice.pdf" />;
+  //const pdf = <embed src="https://sumanbogati.github.io/tiny.pdf" width="600px" height="500px" />;
   return (
     <div class="container">
       <div class="row headerRow">
